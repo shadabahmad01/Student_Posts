@@ -1,0 +1,22 @@
+{% extends "student_posts/base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+	<p><h2> Add a new post </h2></p>
+	<form action="{% url 'student_posts:new_post' %}" method='post'>
+		{% csrf_token %}
+		{{ form.title|as_crispy_field }}
+		<div class="row">
+			<div class="col-6">
+				{{ form.slug|as_crispy_field }}
+			</div>
+			<div class="col-6">
+				{{ form.status|as_crispy_field}}
+			</div>
+		</div>
+		{{ form.content|as_crispy_field }}
+		<button name="submit">Add post</button>
+	</form>
+
+{% endblock content %}

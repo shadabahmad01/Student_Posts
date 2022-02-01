@@ -1,0 +1,27 @@
+{% block sidebar %}
+
+<style>
+        .card{
+            box-shadow: 0 16px 48px #E3E7EB;
+        }
+       
+</style>
+
+<!-- Sidebar Widgets Column -->
+<div class="col-md-4 float-right ">
+<div class="card my-4">
+        <h5 class="card-header">!!! ATTENTION !!!</h5>
+    <div class="card-body">
+        <p class="card-text"> Wants to share your interview experiences or have an informative blog for students. Click below to share.</p>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Add Posts</button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="{% url 'student_posts:new_post' %}">Add Blog</a>
+                    <a class="dropdown-item" href="{% url 'student_posts:new_exp' %}">Add interview Experience</a>
+                </div>
+        </div>
+    </div>
+</div>
+</div>
+
+{% endblock sidebar %}

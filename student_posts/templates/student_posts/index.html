@@ -1,0 +1,28 @@
+{% extends "student_posts/base.html" %}
+
+{% block page_header %}
+	<div class="jumbotron">
+		<h1 class="display-4">Explore your Learning and Carrier.</h1>
+
+		<p class="lead">
+			<ul>
+				<li>Welcome user. Explore <a href="{% url 'student_posts:blogs' %}">blogs </a>to clear your queries and learn about upcoming tecnologies and opportunities.</li>
+				<li>And are you preparing for interviews? Do check<a href="{% url 'student_posts:explist' %}"> interview experiences</a>.</li>
+			</ul>
+		</p>
+
+		{% if user.is_authenticated %}
+			<p> Wants to share your interview experiences or have an informative blog for students. Click Add Posts to share.</p>
+			<div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Add Posts</button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="{% url 'student_posts:new_post' %}">Add Blog</a>
+                    <a class="dropdown-item" href="{% url 'student_posts:new_exp' %}">Add interview Experience</a>
+                </div>
+        </div>
+		{% else %}
+			<p> Wants to share your interview experiences or have an informative blog for students. Register yourself to share.</p>
+			<a class="btn btn-lg btn-primary" href="{% url 'users:register' %}" role="button">Register &raquo;</a>
+		{% endif %}
+	</div>
+{% endblock page_header %}
