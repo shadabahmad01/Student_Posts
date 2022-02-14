@@ -12,4 +12,5 @@ urlpatterns = [
 	path('expdetail/<slug:slug>/', views.ExpDetail.as_view(), name='expdetail'),
 	path('new_exp/', views.new_exp, name='new_exp'),
 	path('user_exp/', views.user_exp, name='user_exp'),
+	path('prompt/', views.prompt, name="prompt"),
 ]

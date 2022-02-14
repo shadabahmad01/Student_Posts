@@ -1,0 +1,8 @@
+{% extends "student_posts/base.html" %}
+
+{% block content %}
+	<p>
+		<h2> You are not logged in.</h2>
+		<h2> Please <a href="{% url 'users:login' %}">login</a> or <a href="{% url 'users:register' %}">register</a> to share your Posts.</h2>
+	</p>
+{% endblock content %}

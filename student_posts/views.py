@@ -112,3 +112,7 @@ def user_exp(request):
 		exp_list = paginator.page(paginator.num_pages)
 
 	return render(request,'student_posts/user_exp.html',{'page':page,'exp_list':exp_list})
+
+def prompt(request):
+	"""The Home page for learning log."""
+	return render(request, 'student_posts/prompt.html')
