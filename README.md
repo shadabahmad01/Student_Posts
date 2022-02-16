@@ -10,11 +10,11 @@ My project aims to provide a platform where new sophomore can have complete guid
  - Microsoft Azure Documentation
  - Django Documentation
 ## Screenshots
-![](screenshots/homepage.png)</br>
-![](screenshots/signup.png)</br>
-![](screenshots/login.png)</br>
-![](screenshots/bloglist.png)</br>
-![](screenshots/interviewlist.png)</br>
-![](screenshots/usersblog.png)</br>
-![](screenshots/usersinterview.png)</br>
-![](screenshots/logout.png)</br>
+ ### ![](screenshots/homepage.png)
+ ### ![](screenshots/signup.png)
+ ### ![](screenshots/login.png)
+ ### ![](screenshots/bloglist.png)
+ ### ![](screenshots/interviewlist.png)
+ ### ![](screenshots/usersblog.png)
+ ### ![](screenshots/usersinterview.png)
+ ### ![](screenshots/logout.png)
